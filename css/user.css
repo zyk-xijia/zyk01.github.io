@@ -1,0 +1,302 @@
+.main {
+    display: flex;
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.left {
+    width: 232px;
+    margin-right: 20px;
+}
+
+.right {
+    flex: 1;
+}
+
+.user {
+    /* 使用flex布局，将主轴更改为垂直方向，并居中，侧轴也居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+.user>span {
+    font-size: 20px;
+}
+
+.user>img {
+    width: 85px;
+    height: 85px;
+}
+
+.user>div {
+    border-radius: 13px;
+    /* 设置渐变色 */
+    background-image: linear-gradient( 264deg, #e05e2f 0%, #ea745e 95%);
+    width: 130px;
+    text-align: center;
+    padding: 4px 0px;
+}
+
+.user>div>span {
+    font-size: 15px;
+    color: #fff;
+}
+
+.user>div>img {
+    margin-right: 2px;
+    width: 18px;
+    margin-top: -5px;
+}
+
+.account {
+    display: flex;
+    /* height: 486px; */
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid rgb(233, 233, 233);
+    background-color: #fff;
+    padding-bottom: 15px;
+}
+
+.account:nth-child(5) {
+    border-bottom: 0;
+}
+
+.account_title {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 23px;
+}
+
+.account>ul>li {
+    margin-bottom: 23px;
+    position: relative;
+}
+
+.account>ul>li:hover {
+    color: #5eb69c;
+    list-style: disc;
+}
+
+.right_top {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.vip,
+.coupons {
+    flex: 1;
+}
+
+.vip {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vip_content {
+    text-align: center;
+}
+
+.vip_content {
+    cursor: pointer;
+}
+
+.vip_content>p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.vip_coupons>span {
+    font-size: 24px;
+    color: red;
+}
+
+.vip_coupons {
+    padding-bottom: 1px;
+}
+
+.vip_content>img {
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+}
+
+.vip_line {
+    border-left: 2px solid rgb(172, 172, 172, 0.3);
+}
+
+.right_middle {
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.right_middle_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.right_middle_top>span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.right_middle_top>a {
+    font-size: 16px;
+    color: rgb(133, 133, 133);
+    padding-top: 3px;
+}
+
+.right_middle_content {
+    display: flex;
+    padding: 0px 15px;
+}
+
+.my_order_left {
+    flex: 2;
+    border: 1px solid rgb(224, 224, 224, 0.7);
+}
+
+.my_order_center_one,
+.my_order_center_two,
+.my_order_right {
+    flex: 1;
+}
+
+.my_order_left>img {
+    width: 107px;
+    height: 107px;
+}
+
+.my_order_right,
+.my_order_center_one,
+.my_order_center_two {
+    /* 使用flex布局，将主轴更改为垂直方向，并居中，侧轴也居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(224, 224, 224, 0.7);
+    border-left: 0;
+    padding: 15px 0;
+}
+
+.my_order_left {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-right: 0;
+}
+
+.my_order_left_text>p {
+    /* 文字内容最多只能显示一行，超出则变为省略号 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+.my_order_left_text>span {
+    font-size: 13px;
+    color: rgb(177, 177, 177);
+    padding-left: 15px;
+}
+
+.my_order_center_one>span:nth-child(1) {
+    color: rgb(255, 112, 112);
+}
+
+.my_order_center_one>span:nth-child(2):hover {
+    cursor: pointer;
+}
+
+.my_order_center_two>span:nth-child(1) {
+    color: rgb(177, 2, 2);
+}
+
+.my_order_right>button{
+    background-color: #5eb69c;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 17px;
+    padding: 6px 20px;
+    border: 0;
+}
+
+.my_order_right>button>a {
+    color: #fff;
+}
+
+.my_order_right>span:hover {
+    /* 当鼠标经过时，光标变为手指模样 */
+    cursor: pointer;
+}
+
+.right_middle_content {
+    margin-bottom: 15px;
+}
+
+.right_middle {
+    overflow: hidden;
+}
+
+.collection_all {
+    display: flex;
+    padding: 0 12px;
+    margin-bottom: 15px;
+}
+
+.collection>img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 7px;
+}
+
+.collection>img:hover {
+    cursor: pointer;
+}
+
+.collection {
+    padding: 0px 35px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.six {
+    /* 将“六折”绝对定位到元素当中去 */
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    width: 18px;
+    height: 46px;
+    color: rgb(22, 170, 46);
+    border: 1px solid rgb(22, 170, 46);
+    border-radius: 3px;
+}
+
+.collection_title>p {
+    text-align: left;
+}
+
+.collection_title>p:nth-child(1):hover {
+    cursor: pointer;
+}
+
+.collection_title>p:nth-child(2) {
+    color: rgb(196, 0, 0);
+}
+
+.collection_title>p:nth-child(2)>span {
+    font-size: 20px;
+}
